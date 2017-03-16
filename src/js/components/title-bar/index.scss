@@ -1,0 +1,33 @@
+.titleBar{
+	height:40px;
+	padding: 10px 14px;
+	box-sizing: content-box;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-item: center;
+	color: #333;
+	.left{
+		height: 40px;
+		line-height: 1.2;
+		flex-shrink: 1;
+		.song-name{
+			font-size:14px;
+			font-weight: bolder;
+			padding-top:4px;
+		}
+		.song-singer{
+			padding-top:4px;
+			font-size:12px;
+		}
+	}
+	.right{
+		flex-shrink: 2;
+		line-height: 40px;
+		.share-btn>.iconfont{
+			font-size:24px;
+		}
+	}
+	border-bottom:1px solid #e2e2e2;
+}

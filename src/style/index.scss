@@ -1,0 +1,17 @@
+@import "reset.scss";
+@import "iconfont.scss";
+html,body{
+  width:100%;
+  min-height: 100%;
+  font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,PingFang SC,Source Han Sans CN,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+  font-weight: 400;
+}
+
+.clear{
+  &:before, &:after{
+    display: table;
+    content: " ";
+    clear:both;
+    box-sizing: border-box;
+  }
+}
