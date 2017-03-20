@@ -1,0 +1,354 @@
+.titleBar {
+  height: px2rem(40px);
+  padding: 10px 14px;
+  box-sizing: content-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  align-item: center;
+  color: #333;
+  border-bottom: 1px solid #e2e2e2; }
+
+.titleBar .left {
+  height: px2rem(40px);
+  line-height: 1.2;
+  -ms-flex-negative: 1;
+  flex-shrink: 1; }
+
+.titleBar .left .song-name {
+  font-size: 14px;
+  font-weight: bolder;
+  padding-top: 4px; }
+
+.titleBar .left .song-singer {
+  padding-top: 4px;
+  font-size: 12px; }
+
+.titleBar .right {
+  -ms-flex-negative: 2;
+  flex-shrink: 2;
+  line-height: px2rem(40px); }
+
+.titleBar .right .share-btn > .iconfont {
+  font-size: 24px; }
+.main {
+  width: 100%;
+  height: auto;
+  position: relative; }
+
+.main .round {
+  width: 200px;
+  height: 200px;
+  background: #38adff;
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  margin-left: -100px;
+  margin-top: 32px;
+  background-image: -webkit-linear-gradient(178.927deg, #2bbc64 50%, transparent 50%, transparent), -webkit-linear-gradient(right, #2bbc64 50%, #e9f4eb 50%, #e9f4eb);
+  background-image: linear-gradient(-88.9268deg, #2bbc64 50%, transparent 50%, transparent), linear-gradient(270deg, #2bbc64 50%, #e9f4eb 50%, #e9f4eb); }
+
+.main .bgImg {
+  background-size: cover;
+  border-radius: 50%;
+  width: 190px;
+  height: 190px;
+  position: absolute;
+  left: 5px;
+  top: 5px; }
+
+.main .beginSpot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -2.5px;
+  margin-top: -2.5px;
+  background: #ff0099; }
+
+.main .endSpot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -2.5px;
+  margin-top: -2.5px;
+  background: #38adff; }
+.controls .top {
+  padding-top: 76px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.controls .top .column {
+  width: 54px;
+  height: 54px;
+  line-height: 54px;
+  margin: 0 9px;
+  overflow: hidden;
+  text-align: center; }
+
+.controls .top .iconfont {
+  font-size: 24px; }
+
+.controls .bottom {
+  padding-top: 24px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.controls .bottom .playBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.controls .bottom .iconfont {
+  font-size: 46px;
+  padding: 0 4px; }
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, figcaption, figure, fieldset, legend, button, input, textarea, th, td {
+  margin: 0;
+  padding: 0; }
+
+body, button, input, select, textarea {
+  font: 12px/1 Lucida Grande,'Microsoft YaHei',"Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif; }
+
+h1 {
+  font-size: 18px;
+  font-weight: normal; }
+
+h2 {
+  font-size: 16px;
+  font-weight: normal; }
+
+h3 {
+  font-size: 14px;
+  font-weight: normal; }
+
+h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+address, cite, dfn, em, var {
+  font-style: normal; }
+
+code, kbd, pre, samp, tt {
+  font-family: "Courier New",Courier,monospace; }
+
+small {
+  font-size: 12px; }
+
+ul, ol, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+abbr[title], acronym[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+q:before, q:after {
+  content: ''; }
+
+legend {
+  color: #000; }
+
+fieldset, img {
+  border: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+hr {
+  border: 0;
+  height: 1px; }
+
+* {
+  -ms-word-break: break-all;
+  word-break: break-all;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-tap-highlight-color: transparent; }
+
+@font-face {
+  font-family: 'iconfont';
+  /* project id 247471 */
+  src: url("//at.alicdn.com/t/font_sypeuttsrloywrk9.eot");
+  src: url("//at.alicdn.com/t/font_sypeuttsrloywrk9.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_sypeuttsrloywrk9.woff") format("woff"), url("//at.alicdn.com/t/font_sypeuttsrloywrk9.ttf") format("truetype"), url("//at.alicdn.com/t/font_sypeuttsrloywrk9.svg#iconfont") format("svg"); }
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-play:before {
+  content: "\E65A"; }
+
+.icon-label:before {
+  content: "\E611"; }
+
+.icon-loopone:before {
+  content: "\E612"; }
+
+.icon-loop:before {
+  content: "\E612"; }
+
+.icon-more:before {
+  content: "\E64B"; }
+
+.icon-find:before {
+  content: "\E613"; }
+
+.icon-cd:before {
+  content: "\E614"; }
+
+.icon-customer:before {
+  content: "\E615"; }
+
+.icon-next:before {
+  content: "\E616"; }
+
+.icon-share:before {
+  content: "\E617"; }
+
+.icon-prev:before {
+  content: "\E618"; }
+
+.icon-list:before {
+  content: "\E619"; }
+
+.icon-balancer:before {
+  content: "\E61A"; }
+
+.icon-discuss:before {
+  content: "\E61B"; }
+
+.icon-recording:before {
+  content: "\E61C"; }
+
+.icon-del:before {
+  content: "\E61D"; }
+
+.icon-shoucang:before {
+  content: "\E61E"; }
+
+.icon-search:before {
+  content: "\E61F"; }
+
+.icon-add:before {
+  content: "\E620"; }
+
+.icon-setting:before {
+  content: "\E621"; }
+
+.icon-person:before {
+  content: "\E622"; }
+
+.icon-picture:before {
+  content: "\E623"; }
+
+.icon-download:before {
+  content: "\E624"; }
+
+.icon-like:before {
+  content: "\E625"; }
+
+.icon-airplay:before {
+  content: "\E626"; }
+
+.icon-volume:before {
+  content: "\E627"; }
+
+.icon-resent:before {
+  content: "\E628"; }
+
+.icon-vip:before {
+  content: "\E629"; }
+
+.icon-pause:before {
+  content: "\E62A"; }
+
+.icon-scan:before {
+  content: "\E62B"; }
+
+.icon-car:before {
+  content: "\E62C"; }
+
+.icon-good:before {
+  content: "\E62D"; }
+
+.icon-light:before {
+  content: "\E62E"; }
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,PingFang SC,Source Han Sans CN,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+  font-weight: 400; }
+
+.clear:before, .clear:after {
+  display: table;
+  content: " ";
+  clear: both;
+  box-sizing: border-box; }
+
+body {
+  background: #eee; }
+
+#app {
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0; }
+
+.wrap {
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0; }
+
+/*# sourceMappingURL=index.css.map*/

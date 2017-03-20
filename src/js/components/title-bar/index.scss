@@ -1,5 +1,5 @@
 .titleBar{
-	height:40px;
+	height: px2rem(40px);
 	padding: 10px 14px;
 	box-sizing: content-box;
 	display: flex;
@@ -9,7 +9,7 @@
 	align-item: center;
 	color: #333;
 	.left{
-		height: 40px;
+		height: px2rem(40px);
 		line-height: 1.2;
 		flex-shrink: 1;
 		.song-name{
@@ -24,7 +24,7 @@
 	}
 	.right{
 		flex-shrink: 2;
-		line-height: 40px;
+		line-height: px2rem(40px);
 		.share-btn>.iconfont{
 			font-size:24px;
 		}
