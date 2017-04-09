@@ -38,18 +38,18 @@ module.exports = {
 				loader: [{
 					loader: 'css-loader'
 				}, {
-					loader: 'sass-loader',
-					options: {
-						sourceMap: true,
-						modules: true,
-					}
-				}, {
 					loader: 'postcss-loader',
 					options: {
 						plugins: () => [
 							autoprefixer,
 							precss
 						]
+					}
+				}, {
+					loader: 'sass-loader',
+					options: {
+						sourceMap: true,
+						modules: true,
 					}
 				}]
 			})

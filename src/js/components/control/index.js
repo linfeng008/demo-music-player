@@ -58,8 +58,19 @@ class Control extends Component {
 
   render() {
     return <div className="controls">
-          <div className="top">
-            <div className="column like">
+          <div className="top">            
+            <div className="column prev" onClick={this.playPrev.bind(this)}>
+                <span className="iconfont icon-prev"></span>
+              </div>
+              <div className="column play" onClick={this.play.bind(this)}>
+                <span className="iconfont icon-play"></span>
+              </div>
+              <div className="column next" onClick={this.playNext.bind(this)}>
+                <span className="iconfont icon-next"></span>
+              </div>
+          </div>
+          <div className="bottom">
+              <div className="column like">
               <span className="iconfont icon-like"></span>
             </div>
             <div className="column del">
@@ -68,19 +79,6 @@ class Control extends Component {
             <div className="column more">
               <span className="iconfont icon-list"></span>
             </div>
-          </div>
-          <div className="bottom">
-              <div className="playBtn">
-                <div className="prev" onClick={this.playPrev.bind(this)}>
-                  <span className="iconfont icon-prev"></span>
-                </div>
-                <div className="play" onClick={this.play.bind(this)}>
-                  <span className="iconfont icon-play"></span>
-                </div>
-                <div className="next" onClick={this.playNext.bind(this)}>
-                  <span className="iconfont icon-next"></span>
-                </div>
-              </div>
           </div>
         </div>
   }

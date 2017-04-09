@@ -1,41 +1,56 @@
-.controls{
-  .top{
-    padding-top:76px;
-    width:100%;
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
-    .column{
-      width: 54px;
-      height: 54px;
-      line-height: 54px;
-      margin: 0 9px;
-      overflow: hidden;
-      text-align: center;
+@import "../../../style/px2rem.scss";
+//  padding-left: dp2rem(10px); // function
+//  @include padding-bottom(20px); // mixin
+.controls {
+    .top {
+        margin: dp2rem(48) 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items:center;
+        .column {
+            width: dp2rem(64);
+            height: dp2rem(64);
+            line-height: dp2rem(64);
+            margin: 0 dp2rem(10);
+            overflow: hidden;
+            text-align: center;
+            .iconfont {
+                font-size: dp2rem(64);                
+            }
+        }
+        .prev {}
+        .play {
+            width: dp2rem(84);
+            height: dp2rem(84);
+            line-height: dp2rem(84);
+            .iconfont {
+                font-size: dp2rem(84);                
+            }
+        }
+        .next {}
+
+        
     }
-    .like{}
-    .del{}
-    .more{}
-    .iconfont{
-      font-size: 24px;
+    .bottom {        
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .column {
+            width: dp2rem(42);
+            height: dp2rem(42);
+            line-height: dp2rem(42);
+            margin: 0 dp2rem(10);
+            overflow: hidden;
+            text-align: center;
+        }
+        .like {}
+        .del {}
+        .more {}
+        .iconfont {
+            font-size: dp2rem(42);
+        }
     }
-  }
-  .bottom{
-    padding-top:24px;
-    width:100%;
-    display: flex;
-    flex-direction:row;
-    justify-content: space-around;
-    .playMode{}
-    .playBtn{
-      display: flex;
-      flex-direction:row;
-      justify-content: center;
-    }
-    .playList{}
-    .iconfont{
-      font-size:46px;
-      padding:0 4px;
-    }
-  }
 }
