@@ -1,6 +1,6 @@
 @import "../../../style/index.scss";
 
-body{
+body {
   // background: url('https://gw.alicdn.com/tps/TB17mnUNpXXXXXoapXXXXXXXXXX-1000-897.jpg')no-repeat center center;
   // background-size: cover 100%;
   // -webkit-filter: blur(15px);
@@ -12,23 +12,25 @@ body{
   // top:0;
   // bottom:0;
   // right:0;
-  background: #eee;
+  background: #fff;
 }
-#app{
-  width:100%;
+
+#app {
+  width: 100%;
   min-height: 100%;
   position: relative;
-  left:0;
-  top:0;
-  right:0;
-  bottom:0;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
-.wrap{
-  width:100%;
+
+.wrap {
+  width: 100%;
   min-height: 100%;
   position: relative;
-  left:0;
-  top:0;
-  right:0;
-  bottom:0;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }

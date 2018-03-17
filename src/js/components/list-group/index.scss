@@ -1,7 +1,14 @@
-body{
-	background: #fafafa;
-}
+@import "../../../style/px2rem.scss";
 
-h1{
-	color:yellow;
+.list-group{
+  width: 100%;
+  height: 100%;
+  padding: dp2rem(15);
+  background: #fff;
+  box-sizing: border-box;
+  .list-group-item{
+    height: dp2rem(50);
+    line-height: dp2rem(50);
+    border-bottom:1px solid #eee;
+  }
 }

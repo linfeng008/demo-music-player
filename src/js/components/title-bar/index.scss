@@ -1,34 +1,51 @@
 @import "../../../style/px2rem.scss";
+@import "../../../style/mixins.scss";
 
-.titleBar{
-	padding: dp2rem(8) dp2rem(14);
-	box-sizing:box-sizing;	
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-item: center;
-	color: #333;
-	border-bottom:1px solid #e2e2e2;
-	.left{
-		line-height: 1.2;
-		flex-shrink: 1;
-		.song-name{
-			font-size: dp2rem(18);			
-			margin-top: dp2rem(8);
+.title-bar {
+  height: dp2rem(70);  
+  padding: dp2rem(20);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  color: #333;
+
+  @include border-bottom(1px, solid, #e2e2e2);
+
+  .left {
+    display: flex;
+    flex-shrink: 1;
+    line-height: 1.2;
+
+    .iconfont {
+      font-size: dp2rem(36);
+    }
+
+    .song-info {
+      margin-left: 12px;
+
+      .song-name {
+        font-size: dp2rem(14);
+        margin-top: dp2rem(0);
+      }
+
+      .song-singer {
+        margin-top: dp2rem(8);
+        font-size: dp2rem(12);
+      }
 		}
-		.song-singer{
-			margin-top: dp2rem(8);
-			font-size:dp2rem(14);
-		}
-	}
-	.right{
-		flex-shrink: 2;		
-		.share-btn{
-		line-height: 1.5;	
-			.iconfont{			
-				font-size: dp2rem(36);
-			}
-		}
-	}	
+
+  }
+
+  .right {
+    flex-shrink: 2;
+
+    .share-btn {
+      .iconfont {
+        font-size: dp2rem(36);
+      }
+    }
+  }
 }

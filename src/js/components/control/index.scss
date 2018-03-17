@@ -1,56 +1,46 @@
 @import "../../../style/px2rem.scss";
+
 //  padding-left: dp2rem(10px); // function
 //  @include padding-bottom(20px); // mixin
 .controls {
-    .top {
-        margin: dp2rem(48) 0;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items:center;
-        .column {
-            width: dp2rem(64);
-            height: dp2rem(64);
-            line-height: dp2rem(64);
-            margin: 0 dp2rem(10);
-            overflow: hidden;
-            text-align: center;
-            .iconfont {
-                font-size: dp2rem(64);                
-            }
-        }
-        .prev {}
-        .play {
-            width: dp2rem(84);
-            height: dp2rem(84);
-            line-height: dp2rem(84);
-            .iconfont {
-                font-size: dp2rem(84);                
-            }
-        }
-        .next {}
+  position: fixed;
+  bottom: dp2rem(80);
+  left: 0;
+  width: 100%;
+  height: dp2rem(80);
 
-        
+  .control {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .column {
+      width: dp2rem(64);
+      height: dp2rem(64);
+      line-height: dp2rem(64);
+      margin: 0 dp2rem(10);
+      overflow: hidden;
+      text-align: center;
+
+      .iconfont {
+        font-size: dp2rem(64);
+      }
     }
-    .bottom {        
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        .column {
-            width: dp2rem(42);
-            height: dp2rem(42);
-            line-height: dp2rem(42);
-            margin: 0 dp2rem(10);
-            overflow: hidden;
-            text-align: center;
-        }
-        .like {}
-        .del {}
-        .more {}
-        .iconfont {
-            font-size: dp2rem(42);
-        }
+
+    .prev {}
+
+    .play {
+      width: dp2rem(84);
+      height: dp2rem(84);
+      line-height: dp2rem(84);
+
+      .iconfont {
+        font-size: dp2rem(84);
+      }
     }
+
+    .next {}
+  }
 }
